@@ -165,7 +165,7 @@ if image is not None:
     probabilities = list(calculate_probabilities(flat_image))
 
     # Sort the list based on the second element of each tuple (the probability)
-    sorted_probabilities = sorted(probabilities, key=lambda x: x[1], reverse=True)
+    # sorted_probabilities = sorted(probabilities, key=lambda x: x[1], reverse=True)
 
     # Display the sorted list
     print("Probability of each symbol distribution:")
@@ -303,7 +303,7 @@ if image is not None:
     '''
     Calculate average length and compression ratio for full image from my huffman mapping
     '''
-    full_img_prob = [(240, 0.3627345679012346), (48, 0.21556481481481482), (208, 0.10142592592592592),(80, 0.10026388888888889), (16, 0.08940895061728395), (176, 0.05304475308641975),(112, 0.0424212962962963), (144, 0.0351358024691358)]
+    # full_img_prob = [(240, 0.3627345679012346), (48, 0.21556481481481482), (208, 0.10142592592592592),(80, 0.10026388888888889), (16, 0.08940895061728395), (176, 0.05304475308641975),(112, 0.0424212962962963), (144, 0.0351358024691358)]
 
     average_length_full = sum(prob * len(huffman_mapping[symbol]) for symbol, prob in full_img_prob)
     print(f"Average length of the full image: {average_length_full} bits per symbol")
