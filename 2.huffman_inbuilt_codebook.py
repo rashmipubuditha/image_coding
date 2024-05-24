@@ -117,7 +117,7 @@ if image is not None:
     '''
     Calculate average length and compression ratio for cropped image from inbuild huffman codebook
     '''
-    cropped_prob = [(208, 0.78125), (176, 0.1484375), (240, 0.0234375), (48, 0.015625), (80, 0.015625), (16, 0.0078125),(112, 0.00390625), (144, 0.00390625)]
+    # cropped_prob = [(208, 0.78125), (176, 0.1484375), (240, 0.0234375), (48, 0.015625), (80, 0.015625), (16, 0.0078125),(112, 0.00390625), (144, 0.00390625)]
 
     # Average lengths
     average_length_cropped = sum(prob * len(codebook[symbol]) for symbol, prob in cropped_prob)
