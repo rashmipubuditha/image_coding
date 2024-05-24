@@ -1,10 +1,8 @@
-# image_coding
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Compression using Huffman Codebook</title>
 </head>
 <body>
     <h1>Image Compression using Huffman Codebook</h1>
@@ -21,15 +19,13 @@
     <h2>Directory Structure</h2>
     <h2>Installation</h2>
     <p>To use this project, clone the repository and install the required dependencies:</p>
-    <pre>
-    git clone <em>repository_url</em>
-    cd <em>repository_name</em>
-    pip install -r requirements.txt
-    </pre>
     <h2>Usage</h2>
     <p>Follow the steps below to compress and decompress an image:</p>
     <ol>
         <li>Place the image you want to compress </li>
+        <li>Run the code1 <code>1.build_huffman_codebook.py</code> to build the Huffman codebook according to your image and decompress the image using your Huffman codebook:</li>
+        <li>Run the code2<code>2.huffman_inbuilt_codebook.py</code> to use the inbuilt library of Python for building Huffman codebook:</li>
+        <li>Run the <code>3.decompress_huffman_inbuilt_text_files.py</code> to decompress the images compressed by code2</li>
     </ol>
     <h2>Contributing</h2>
     <p>I welcome contributions! Please fork the repository and submit a pull request with your changes. Make sure to add tests for any new features or bug fixes.</p>
