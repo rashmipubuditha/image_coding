@@ -140,7 +140,7 @@ if full_image is not None:
     probabilities = list(calculate_probabilities(flat_image))
 
     # Sort the list based on the second element of each tuple (the probability)
-    sorted_probabilities = sorted(probabilities, key=lambda x: x[1], reverse=True)
+    # sorted_probabilities = sorted(probabilities, key=lambda x: x[1], reverse=True)
 
     # Display the sorted list
     print("Probability of each symbol distribution:")
